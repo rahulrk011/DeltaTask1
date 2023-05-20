@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Snake</title>
+        <link rel="stylesheet" href="style_hacker++.css"/>
+        <script src="snake_hacker++.js" defer></script>
+    </head>
+    <body>
+        <div class="popup">
+                <div class="popup-head">
+                    <div class="title"> WELCOME</div>
+                    <button data-close class="close">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <p>
+                    Welcome to the classic snake game , try getting the highest score
+                    <ul>
+                        <li>You will have three lives</li>
+                        <li>Get the letters to complete the word</li>
+                        <li>Getting the wrong letter , hitting the wall, eating yourself , a life will be lost</li>
+                        <li>You will lose a life even if you get hit by the spiky poisonous fruit</li>
+                        <li>A shield powerup will protect you from the spiky fruit</li>
+                        <li>If the time runs out the game will be over</li>
+                    </ul></p>
+                </div>
+            </div>
+        
+        <div class="gameover">
+            <div class="gohead"></div>
+            <div calss="leaderboard">
+                <tr>
+                    <th> Position </th>
+                    <th> Player Name</th>
+                    <th> Score </th>
+                </tr>
+            </div>
+            <div class="gobody"></div>
+        </div>
+
+
+        <div class="back">  
+        <div class="info">
+            <div id="score" style="border: 2px solid black;"></div>
+            <div id="lives" style=" display: flex; flex-direction: row;">
+                <div class="life1"><img alt='heart' src="heart.png" class="life"></div>
+                <div class="life2"><img alt='heart' src="heart.png" class="life"></div>
+                <div class="life3"><img alt='heart' src="heart.png" class="life"></div>
+            </div>
+            <div id="Hiscore" style="border: 2px solid black;"></div>
+            <div id="timer" style="border: 2px solid black;"></div>
+            <div id="choice"></div>
+        </div>
+
+        <div class="foodBlocks">
+            <h3 class="welcome"></h3>
+        </div>
+
+        <div class="page">
+            
+        <div class="Area">
+            
+        </div>
+        <div class="keys">
+            <div><img  class="up" alt='up' src="uparrow.png"></div>
+            <div class="lr">
+                <div ><img class="left" alt='left' src="leftArrow.png"></div>
+                <div><img class='pause' alt='pause' src='pause.png'/></div>
+                <div ><img class="right" alt='right' src="rightarrow.png"></div>
+            </div>
+            <div ><img class="down" alt='down' src="downarrow.png"></div></div>
+        
+        <div class="txt"> <h1 style="font-size: x-larger;">Press Escape to Pause/continue</h1>  </div>
+
+        </div>
+        </div>
+    </body>
+</html>
