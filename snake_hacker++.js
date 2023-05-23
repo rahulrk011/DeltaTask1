@@ -1000,7 +1000,7 @@ function portal(){
     py2=Math.floor(Math.floor(size/2)+Math.random()*(Math.floor(size/2)-3));
     document.querySelector(`[data-x="${px2}"][data-y="${py2}"]`).classList.add('portal')
 }else{
-    if(segment[0].x==px1 && segment[0].y==py1){
+    if((segment[0].x==px1 && segment[0].y==py1)){
         segment[0].x=px2;
         segment[0].y=py2;
         document.querySelector(`[data-x="${px1}"][data-y="${py1}"]`).classList.remove('snake');
@@ -1009,6 +1009,16 @@ function portal(){
         segment[0].y=py1;
         document.querySelector(`[data-x="${px2}"][data-y="${py2}"]`).classList.remove('snake');
     }
+    else if((segment1[0].x==px1 && segment1[0].y==py1)){
+        segment1[0].x=px2;
+        segment1[0].y=py2;
+        document.querySelector(`[data-x="${px1}"][data-y="${py1}"]`).classList.remove('snake1');
+    }else if(segment1[0].x==px2 && segment1[0].y==py2){
+        segment1[0].x=px1;
+        segment1[0].y=py1;
+        document.querySelector(`[data-x="${px2}"][data-y="${py2}"]`).classList.remove('snake1');
+    }
+
 
 }
 
