@@ -46,7 +46,6 @@
     font-size: small;
     background-color: #89e774;
     border:  2px solid rgb(6, 105, 8);
-    text-shadow: 2px 2px #2e9c16;
 }
 
 .foodBlocks{
@@ -66,7 +65,7 @@
 
 }
 .next{
-    border:5px solid white;
+    border:3.5px solid white;
     border-radius: 7px;
 }
 .color{
@@ -199,6 +198,7 @@ html{
     background-color: rgb(128, 229, 101);
     padding:5px;
     border-radius: 3px 20px;
+    border-color: black;
 }
 .welcome{
     font-size:xx-large;
